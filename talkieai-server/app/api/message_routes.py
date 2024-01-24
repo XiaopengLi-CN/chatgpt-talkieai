@@ -15,10 +15,10 @@ router = APIRouter()
 
 @router.post("/messages/{message_id}/practice")
 def message_practice_api(
-    message_id: str,
-    dto: MessagePracticeDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        message_id: str,
+        dto: MessagePracticeDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """发送消息"""
     chat_service = ChatService(db)
@@ -29,9 +29,9 @@ def message_practice_api(
 
 @router.post("/messages/{message_id}/translate")
 def translate_api(
-    message_id: str,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        message_id: str,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """翻译成用户的源语言"""
     chat_service = ChatService(db)
@@ -40,9 +40,9 @@ def translate_api(
 
 @router.get("/message/speech")
 def speech_api(
-    message_id: str,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        message_id: str,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """消息转语音"""
     chat_service = ChatService(db)
@@ -64,9 +64,9 @@ def speech_api(
 
 @router.post("/message/translate-source-language")
 def translate_source_language(
-    dto: TranslateTextDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: TranslateTextDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """翻译成用户本身的语言"""
     chat_service = ChatService(db)
@@ -75,9 +75,9 @@ def translate_source_language(
 
 @router.post("/message/translate-setting-language")
 def translate_setting_language(
-    dto: TranslateTextDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: TranslateTextDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """翻译成用户学习的语言"""
     chat_service = ChatService(db)
@@ -86,18 +86,19 @@ def translate_setting_language(
 
 @router.get("/message/speech-content")
 def speech_content_api(
-    content: str,
-    session_id: str = None,
-    speech_role_name: str = None,
-    speech_role_style: str = None,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        content: str,
+        session_id: str = None,
+        speech_role_name: str = None,
+        speech_role_style: str = None,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """消息转语音"""
     chat_service = ChatService(db)
     speech_result = chat_service.message_speech_content(
         TransformContentSpeechDTO(
-            content=content, speech_role_name=speech_role_name, speech_role_style=speech_role_style, session_id=session_id
+            content=content, speech_role_name=speech_role_name, speech_role_style=speech_role_style,
+            session_id=session_id
         ),
         account_id,
     )
@@ -118,9 +119,9 @@ def speech_content_api(
 
 @router.post("/message/grammar")
 def grammar_api(
-    dto: GrammarDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: GrammarDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """分析语法错误"""
     chat_service = ChatService(db)
@@ -130,9 +131,9 @@ def grammar_api(
 # 进行发音评估
 @router.post("/message/pronunciation")
 def pronunciation_api(
-    dto: PronunciationDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: PronunciationDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """进行发单评估"""
     chat_service = ChatService(db)
@@ -145,9 +146,9 @@ def pronunciation_api(
 # 获取单词的音标与翻译
 @router.post("/message/word/detail")
 def get_word_api(
-    dto: WordDetailDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: WordDetailDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """获取单词的音标与翻译"""
     chat_service = ChatService(db)
@@ -157,9 +158,9 @@ def get_word_api(
 # 单词练习
 @router.post("/message/word/practice")
 def word_practice_api(
-    dto: WordPracticeDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: WordPracticeDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """单词练习"""
     chat_service = ChatService(db)
@@ -169,9 +170,9 @@ def word_practice_api(
 # 帮助用户生成提示句
 @router.post("/message/prompt")
 def prompt_api(
-    dto: PromptDTO,
-    db: Session = Depends(get_db),
-    account_id: str = Depends(get_current_account),
+        dto: PromptDTO,
+        db: Session = Depends(get_db),
+        account_id: str = Depends(get_current_account),
 ):
     """帮助用户生成提示句"""
     chat_service = ChatService(db)

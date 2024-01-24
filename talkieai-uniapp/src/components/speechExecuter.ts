@@ -208,7 +208,7 @@ class Speech {
     }
 
     uni.uploadFile({
-      url: __config.basePath + "/voice/upload",
+      url: __config.basePath + "/voices/upload",
       filePath: filePath,
       header: {
         "X-Token": uni.getStorageSync("x-token"),

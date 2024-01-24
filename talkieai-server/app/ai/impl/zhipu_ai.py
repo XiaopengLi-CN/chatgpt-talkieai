@@ -44,13 +44,13 @@ class ZhipuAIComponent(ChatAI):
         """与AI自由聊天"""
         language = dto.language
         system_message = (
-            'The reply must be json, and format of json is {"message":"result of message","message_style":"must be one of the options '
-            + f"{json.dumps(dto.styles, ensure_ascii=False)}"
-            + '"}, '
-            + f"The 'message_style'  within the square brackets . "
-            + f"I want you to act as an {language} speaking partner and improver, your name is {dto.name}. "
-            + f"No matter what language I speak to you, you need to reply me in {language}. "
-            + f"I hope you will ask me a question from time to time in your reply "
+                'The reply must be json, and format of json is {"message":"result of message","message_style":"must be one of the options '
+                + f"{json.dumps(dto.styles, ensure_ascii=False)}"
+                + '"}, '
+                + f"The 'message_style'  within the square brackets . "
+                + f"I want you to act as an {language} speaking partner and improver, your name is {dto.name}. "
+                + f"No matter what language I speak to you, you need to reply me in {language}. "
+                + f"I hope you will ask me a question from time to time in your reply "
         )
 
         messages = [{"role": "system", "content": system_message}]
@@ -73,14 +73,14 @@ class ZhipuAIComponent(ChatAI):
         """与AI自由聊天"""
         language = dto.language
         system_message = (
-            f"Topic:{dto.prompt}.Please chat with me in this topic. If this conversation can be concluded or if the user wishes to end it, please return topic_completed=true."
-            + 'The reply must be json, and format of json is {"message":"result of message","topic_completed":"Whether this topic has been completd.","message_style":"must be one of the options '
-            + f"{json.dumps(dto.styles, ensure_ascii=False)}"
-            + '"}, '
-            + f"The 'message_style'  within the square brackets . "
-            + f"I want you to act as an {language} speaking partner and improver, your name is {dto.name}. "
-            + f"No matter what language I speak to you, you need to reply me in {language}. "
-            + f"I hope you will ask me a question from time to time in your reply "
+                f"Topic:{dto.prompt}.Please chat with me in this topic. If this conversation can be concluded or if the user wishes to end it, please return topic_completed=true."
+                + 'The reply must be json, and format of json is {"message":"result of message","topic_completed":"Whether this topic has been completd.","message_style":"must be one of the options '
+                + f"{json.dumps(dto.styles, ensure_ascii=False)}"
+                + '"}, '
+                + f"The 'message_style'  within the square brackets . "
+                + f"I want you to act as an {language} speaking partner and improver, your name is {dto.name}. "
+                + f"No matter what language I speak to you, you need to reply me in {language}. "
+                + f"I hope you will ask me a question from time to time in your reply "
         )
 
         messages = [{"role": "system", "content": system_message}]
@@ -114,7 +114,7 @@ class ZhipuAIComponent(ChatAI):
         return result
 
     def topic_invoke_complete(
-        self, dto: AITopicCompleteParams
+            self, dto: AITopicCompleteParams
     ) -> AITopicCompleteResult:
         """场景 结束"""
         system_content = "下面是一场对话\n"
@@ -129,8 +129,8 @@ class ZhipuAIComponent(ChatAI):
             system_content = system_content + f"{target}\n"
 
         system_content = (
-            system_content
-            + "现在你需要计算出 <用户:> 所说的所有话中使用了多少单词数量（仅需要数字结果，重复单词不需要计算），对应后面的目标实现了多少个（仅需要数字结果），对用户的表达给出评分（满分100分，仅需要数字结果），还要给出300字以内的建议（包含中文讲解与英文示例），返回结果只需要有json格式,使用单词量放在words字段，目标实现数量放在targets字段，评分放在score字段，建议放在suggestion字段，不需要再额外的任何信息，记住，只需要统计<用户:>下的内容\n"
+                system_content
+                + "现在你需要计算出 <用户:> 所说的所有话中使用了多少单词数量（仅需要数字结果，重复单词不需要计算），对应后面的目标实现了多少个（仅需要数字结果），对用户的表达给出评分（满分100分，仅需要数字结果），还要给出300字以内的建议（包含中文讲解与英文示例），返回结果只需要有json格式,使用单词量放在words字段，目标实现数量放在targets字段，评分放在score字段，建议放在suggestion字段，不需要再额外的任何信息，记住，只需要统计<用户:>下的内容\n"
         )
         json_result = self._original_invoke_chat_json(
             MessageInvokeDTO(messages=[{"role": "user", "content": system_content}])
@@ -153,7 +153,7 @@ class ZhipuAIComponent(ChatAI):
         return resp
 
     def invoke_grammar_analysis(
-        self, params: GrammarAnalysisParams
+            self, params: GrammarAnalysisParams
     ) -> AIGrammarAnalysisResult:
         messages = [
             {
@@ -180,9 +180,9 @@ class ZhipuAIComponent(ChatAI):
             else:
                 system_content = system_content + f"AI: {message['content']}\n"
         system_content = (
-            system_content
-            + "现在你需要做为一个用户来回答下一句话，不可以有提供帮助与提问问题的意思，返回内容不得包含 用户: 等其他介绍字眼，语言使用"
-            + params.language
+                system_content
+                + "现在你需要做为一个用户来回答下一句话，不可以有提供帮助与提问问题的意思，返回内容不得包含 用户: 等其他介绍字眼，语言使用"
+                + params.language
         )
         invoke_dto = MessageInvokeDTO(
             messages=[{"role": "user", "content": system_content}]

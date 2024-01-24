@@ -7,7 +7,7 @@ from app.core.logging import logging
 from app.core.language import *
 
 key = Config.AZURE_KEY
-region = "eastasia"
+region = "eastasia"#这里要单独配置
 
 speech_config = speechsdk.SpeechConfig(subscription=key, region=region)
 
