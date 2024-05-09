@@ -1,20 +1,35 @@
+# 导入sqlalchemy.orm模块中的Session，Session是SQLAlchemy中的一个概念，它是对数据库连接的封装，可以用来执行SQL语句，获取结果等
 from sqlalchemy.orm import Session
 
+# 导入app.core.utils模块中的所有内容，这个模块可能包含了一些工具函数或者类
 from app.core.utils import *
+# 导入app.db.account_entities模块中的所有内容，这个模块可能包含了和账户相关的数据库实体类
 from app.db.account_entities import *
+# 导入app.db.chat_entities模块中的所有内容，这个模块可能包含了和聊天相关的数据库实体类
 from app.db.chat_entities import *
+# 导入app.db.sys_entities模块中的所有内容，这个模块可能包含了和系统相关的数据库实体类
 from app.db.sys_entities import *
+# 导入app.db.topic_entities模块中的所有内容，这个模块可能包含了和话题相关的数据库实体类
 from app.db.topic_entities import *
+# 导入app.models.account_models模块中的所有内容，这个模块可能包含了和账户相关的模型类
 from app.models.account_models import *
+# 导入app.models.chat_models模块中的所有内容，这个模块可能包含了和聊天相关的模型类
 from app.models.chat_models import *
+# 导入app.services.account_service模块中的AccountService类，这个类可能包含了和账户相关的服务函数
 from app.services.account_service import AccountService
+# 导入app.services.topic_service模块中的TopicService类，这个类可能包含了和话题相关的服务函数
 from app.services.topic_service import TopicService
 
+# 导入app.ai.models模块中的所有内容，这个模块可能包含了和AI相关的模型类
 from app.ai.models import *
+# 导入app.ai.chat_ai模块，这个模块可能包含了和AI聊天相关的函数
 from app.ai import chat_ai
+# 导入app.core.azure_voice模块中的所有内容，这个模块可能包含了和Azure语音服务相关的函数
 from app.core.azure_voice import *
+# 导入app.core.exceptions模块中的所有内容，这个模块可能包含了一些自定义的异常类
 from app.core.exceptions import *
 
+# 定义一个常量MESSAGE_SYSTEM，值为"SYSTEM"，可能用于标识系统消息
 MESSAGE_SYSTEM = "SYSTEM"
 
 # 读取data下 language_demo_map.json 生成对应字典

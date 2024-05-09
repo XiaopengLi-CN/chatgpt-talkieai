@@ -1,5 +1,5 @@
 [
-  { "label": "英语（美国）", "value": "en-US", "default_voice_role_name":"en-US-AvaNeural" },
+  { "label": "英语（美国）", "value": "en-US", "default_voice_role_name":"en-US-AriaNeural" },
   { "label": "英语（英国）", "value": "en-GB", "default_voice_role_name":"en-GB-SoniaNeural" },
   { "label": "中文（普通话）", "value": "zh-CN", "default_voice_role_name":"zh-CN-XiaoxiaoNeural" },
   { "label": "中文（粤语）", "value": "zh-HK", "default_voice_role_name":"" },

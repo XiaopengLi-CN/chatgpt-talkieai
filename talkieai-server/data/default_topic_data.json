@@ -2,49 +2,49 @@
   "groups": [
     {
       "id": "group_1",
-      "name": "自我介绍",
+      "name": "国际中文语法纠错",
       "type": "ROLE_PLAY",
-      "description": "做一个基本的自我介绍吧",
+      "description": "我是你的国际中文学习小助手HSK helper，很高兴能够跟你聊天，让我来帮你纠正语法错误吧！",
       "sequence": 10,
       "topics": [
         {
           "id": "topic_1",
-          "language": "en-US",
-          "name": "自我介绍",
+          "language": "zh-CN",
+          "name": "国际中文语法纠错",
           "level": 2,
-          "role_short_name": "en-US-JaneNeural",
+          "role_short_name": "zh-CN-XiaoxiaoNeural",
           "role_speech_rate": "1.0",
-          "topic_user_name": "Jack",
-          "topic_bot_name": "Jane",
-          "prompt": "你是用户的一位很好的朋友，现在开始引导用户来做一次简单的自我介绍吧，一步步的引导用户来介绍姓名、地址、爱好、身边朋友",
-          "description": "做一个基本的自我介绍吧",
-          "image_url": "https://qiniu.prejade.com/1597936949107363840/aitake/images/be8d50e5-17ba-4941-8960-af3ee9be6711.png",
+          "topic_user_name": "国际中文学生",
+          "topic_bot_name": "国际中文老师",
+          "prompt": "你是用户的一位国际中文老师，现在开始引导用户来做一次简单的聊天，一定要对用户每一次的消息进行中文语法纠错提醒！一步步的引导用户来介绍姓名、地址、爱好、身边朋友",
+          "description": "我是你的国际中文学习小助手HSK helper，很高兴能够跟你聊天，让我来帮你纠正语法错误吧！",
+          "image_url": "https://img2.imgtp.com/2024/05/09/CW9cHBtz.jpg",
           "sequence": 1,
           "phrases":[
-            {"phrase":"Hello, my name is Jack", "phrase_translation":"你好，我的名子叫Jack", "type":"PHRASE", "sequence": 1}
+            {"phrase":"Hello, my name is Xiaopeng", "phrase_translation":"你好，我的名字叫晓鹏", "type":"PHRASE", "sequence": 1}
           ],
           "targets": [
             {
               "type": "MAIN",
-              "description": "自我介绍并进行轻松随意的交谈",
+              "description": "自我介绍并进行轻松随意的交谈，一定要对用户每一次的消息进行中文语法纠错提醒！",
               "description_translation": "",
               "sequence": 100
             },
             {
               "type": "TRIAL",
-              "description": "问新朋友俩个关于他/她自己的问题",
+              "description": "问新朋友俩个关于他/她自己的问题，一定要对用户每一次的消息进行中文语法纠错提醒！",
               "description_translation": "",
               "sequence": 3
             },
             {
               "type": "TRIAL",
-              "description": "展开聊聊你的家乡和工作",
+              "description": "展开聊聊你的爱好和特长，一定要对用户每一次的消息进行中文语法纠错提醒！",
               "description_translation": "",
               "sequence": 2
             },
             {
               "type": "TRIAL",
-              "description": "展开聊聊你的家乡和工作",
+              "description": "展开聊聊你的家乡和工作，一定要对用户每一次的消息进行中文语法纠错提醒！",
               "description_translation": "",
               "sequence": 1
             }
@@ -52,28 +52,29 @@
         }
       ]
     },
+
     {
       "id": "group_2",
-      "name": "外贸业务",
+      "name": "国际中文学习推荐",
       "type": "ROLE_PLAY",
-      "description": "外贸业务的交流",
+      "description": "国际中文学习内容的推荐",
       "sequence": 1,
       "topics": [
         {
           "id": "group_2_topic_1",
           "language": "en-US",
-          "name": "外贸介绍",
+          "name": "国际中文学习推荐",
           "level": 4,
           "role_short_name": "en-US-JaneNeural",
           "role_speech_rate": "1.0",
-          "topic_user_name": "Jack",
-          "topic_bot_name": "Jane",
-          "prompt": "你是用户的一位外贸客户，现在开始引导用户来做一次简单的外贸介绍吧，一步步的引导用户来介绍产品、效果、使用方式",
+          "topic_user_name": "Student",
+          "topic_bot_name": "HSK helper",
+          "prompt": "你是一位国际中文老师，你现在要跟学生进行愉快的聊天，并从学生的回答中给学生的中文水平进行打分，根据学生不同的水平，你要给他们推荐不同的学习内容，例如书籍、课程等等。",
           "description": "做一个基本的自我介绍吧",
-          "image_url": "https://qiniu.prejade.com/1597936949107363840/aitake/images/be8d50e5-17ba-4941-8960-af3ee9be6711.png",
+          "image_url": "https://img2.imgtp.com/2024/05/09/CW9cHBtz.jpg",
           "sequence": 1,
           "phrases":[
-            {"phrase":"Hello, my name is Jack", "phrase_translation":"你好，我的名子叫Jack", "type":"PHRASE", "sequence": 1}
+            {"phrase":"Hello, my name is HSK helper", "phrase_translation":"你好，我的名子叫HSK helper", "type":"PHRASE", "sequence": 1}
           ],
           "targets": [
             {
@@ -84,13 +85,13 @@
             },
             {
               "type": "TRIAL",
-              "description": "讲清楚自己的产品",
+              "description": "根据学生的回答给学生的中文水平进行打分",
               "description_translation": "",
               "sequence": 3
             },
             {
               "type": "TRIAL",
-              "description": "讲清楚产品的使用方式",
+              "description": "根据学生的中文水平给学生推荐不同的学习内容",
               "description_translation": "",
               "sequence": 2
             }

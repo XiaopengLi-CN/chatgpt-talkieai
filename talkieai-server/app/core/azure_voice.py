@@ -1,36 +1,55 @@
+# 导入json模块，用于处理JSON数据，如将Python对象转换为JSON格式的字符串，或将JSON格式的字符串转换为Python对象
 import json
 
+# 导入azure.cognitiveservices.speech模块，这是Azure的语音服务SDK，提供了语音识别、语音合成等功能
 import azure.cognitiveservices.speech as speechsdk
 
+# 从app.config模块中导入Config类，这个类通常用于管理应用的配置信息，如数据库连接字符串、密钥等
 from app.config import Config
+# 从app.core.logging模块中导入logging对象，这是Python的标准日志库，用于记录应用运行过程中的信息，如调试信息、警告、错误等
 from app.core.logging import logging
+# 从app.core.language模块中导入所有内容，这个模块可能包含了处理语言相关的功能，如语言识别、翻译等
 from app.core.language import *
 
+# 从Config类中获取AZURE_KEY属性的值，赋值给key，这是为了获取Azure服务的访问密钥
 key = Config.AZURE_KEY
+# 定义region变量，赋值为"eastasia"，这是为了指定Azure服务的地理区域，"eastasia"表示东亚地区
 region="eastasia"
 
+# 创建SpeechConfig的实例，将key和region作为参数传入，赋值给speech_config，这是为了配置Azure的语音服务
+# SpeechConfig类用于设置语音服务的配置信息，如订阅密钥、地理区域等
 speech_config = speechsdk.SpeechConfig(subscription=key, region=region)
 
+# 创建SpeechSynthesizer的实例，将speech_config作为参数传入，audio_config参数为None，赋值给speech_synthesizer
+# SpeechSynthesizer类是语音合成器，用于将文本转换为语音，audio_config参数用于指定音频配置，如音频格式、采样率等，None表示使用默认配置
 speech_synthesizer = speechsdk.SpeechSynthesizer(
     speech_config=speech_config, audio_config=None
 )
 
+
 def speech_default(content: str, output_path_str: str, language: str, voice_name: str|None = None):
     """默认语音合成  还是用不了，因为每次还要实例化 speech_synthesizer"""
+    # 设置语音识别的语言，这里的language是函数的参数，表示要设置的语言
     speech_config.speech_recognition_language = language
+    # 设置语音合成的语言，这里的language是函数的参数，表示要设置的语言
     speech_config.speech_synthesis_language = language
-    # 如果voice_name是空，则设置对应语言的默认角色
+    # 如果没有指定voice_name（语音角色），则获取对应语言的默认角色
     if not voice_name:
         voice_name = get_azure_language_default_role(language)
+    # 设置语音合成的语音角色
     speech_config.speech_synthesis_voice_name = voice_name
+    # 调用speak_text_async方法进行语音合成，content是要合成的文本内容，get方法是为了获取异步操作的结果
     speech_synthesis_result = speech_synthesizer.speak_text_async(content).get()
+    # 创建AudioDataStream对象，用于处理语音合成的结果
     audio_data_stream = speechsdk.AudioDataStream(speech_synthesis_result)
 
+    # 判断语音合成的结果，如果合成成功，则将结果保存为wav文件
     if (
         speech_synthesis_result.reason
         == speechsdk.ResultReason.SynthesizingAudioCompleted
     ):
         audio_data_stream.save_to_wav_file(output_path_str)
+    # 如果语音合成被取消，则记录错误信息，并抛出异常
     elif (
         speech_synthesis_result.reason
         == speechsdk.ResultReason.Canceled
@@ -48,11 +67,13 @@ def speech_default(content: str, output_path_str: str, language: str, voice_name
                     "Did you set the speech resource key and region values?"
                 )
         raise Exception("语音合成失败")
+    # 如果语音合成失败，则记录错误信息，并抛出异常
     else:
         logging.error(
             "Speech synthesis failed: {}".format(speech_synthesis_result.reason)
         )
         raise Exception("语音合成失败")
+
 
 def speech_by_ssml(
     content: str,
@@ -63,9 +84,11 @@ def speech_by_ssml(
     targetLang: str,
 ):
     """可定制的文本转语音"""
-    # 如果voice_name是空，则设置对应语言的默认角色
+    # 如果没有指定voice_name（语音角色），则获取对应语言的默认角色
     if not voice_name:
         voice_name = get_azure_language_default_role(targetLang)
+
+    # 构造SSML（Speech Synthesis Markup Language）语音合成标记语言，用于控制语音合成的各种参数，如语音角色、语速、语调等
     ssml = f"""
     <speak version="1.0"  xmlns:mstts="https://www.w3.org/2001/mstts" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="{targetLang}">
       <voice name="{voice_name}">
@@ -77,12 +100,18 @@ def speech_by_ssml(
       </voice>
     </speak>
     """
+    # 记录SSML内容，用于调试
     logging.info(ssml)
+
+    # 调用start_speaking_ssml_async方法进行语音合成，ssml是要合成的SSML内容，get方法是为了获取异步操作的结果
     speech_synthesis_result = speech_synthesizer.start_speaking_ssml_async(
         ssml
     ).get()  # Get the audio data stream
+
+    # 创建AudioDataStream对象，用于处理语音合成的结果
     audio_data_stream = speechsdk.AudioDataStream(speech_synthesis_result)
 
+    # 判断语音合成的结果，如果合成成功，则将结果保存为wav文件
     if (
         speech_synthesis_result.reason
         == speechsdk.ResultReason.SynthesizingAudioStarted
@@ -90,6 +119,7 @@ def speech_by_ssml(
         logging.info("init 1")
         audio_data_stream.save_to_wav_file(output_path_str)
         logging.info("init 2")
+    # 如果语音合成失败，则记录错误信息，并抛出异常
     else:
         logging.error(
             "Speech synthesis failed: {}".format(speech_synthesis_result.reason)
@@ -108,7 +138,6 @@ def speech_by_ssml(
                         "Did you set the speech resource key and region values?"
                     )
         raise Exception("语音合成失败")
-
 
 def speech_pronunciation(content: str, speech_path: str, language: str = "en-US"):
     """发音评估"""
