@@ -8,7 +8,7 @@ PyJWT==2.8.0
 python-dotenv==1.0.1
 SQLAlchemy==2.0.20
 starlette==0.35.0
-zhipuai==1.0.7
+zhipuai==2.0.1.20240429
 pymysql~=1.0.2
 azure-cognitiveservices-speech~=1.34.1
 requests~=2.28.2

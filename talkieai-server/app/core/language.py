@@ -9,14 +9,14 @@ language_data = []
 # 定义一个空字典，命名为azure_data，这个字典用于存储Azure的数据
 azure_data = {}
 # 使用with语句打开"data/azure.json"文件，文件打开模式为"r"（读取模式）
-with open("data/azure.json", "r") as f:
+with open("data/azure.json", "r",  encoding="utf-8") as f:
     # 使用json模块的load方法读取文件内容，并将其解码为Python对象，然后赋值给azure_data
     azure_data = json.load(f)
 
 # 定义一个空列表，命名为azure_style_label_data，这个列表用于存储Azure的样式标签数据
 azure_style_label_data = []
 # 使用with语句打开"data/azure_style_label.json"文件，文件打开模式为"r"（读取模式）
-with open("data/azure_style_label.json", "r") as f:
+with open("data/azure_style_label.json", "r", encoding="utf-8") as f:
     # 使用json模块的load方法读取文件内容，并将其解码为Python对象，然后赋值给azure_style_label_data
     azure_style_label_data = json.load(f)
 
@@ -30,7 +30,7 @@ for item in azure_style_label_data:
 # 定义一个空字典，命名为sys_language_data，这个字典用于存储系统语言数据
 sys_language_data = {}
 # 使用with语句打开"data/sys_language.json"文件，文件打开模式为"r"（读取模式）
-with open("data/sys_language.json", "r") as f:
+with open("data/sys_language.json", "r", encoding="utf-8") as f:
     # 使用json模块的load方法读取文件内容，并将其解码为Python对象，然后赋值给sys_language_data
     sys_language_data = json.load(f)
 

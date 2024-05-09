@@ -6,7 +6,7 @@ from app.ai.interfaces import *
 from app.ai.models import *
 from app.core.language import *
 from app.core.logging import logging
-
+from zhipuai import ZhipuAI
 
 class ZhipuInvokeDTO(BaseModel):
     messages: List[Dict]
@@ -16,7 +16,7 @@ class ZhipuInvokeDTO(BaseModel):
 
 class ZhipuAIComponent(ChatAI):
     def __init__(self, api_key: str, model: str):
-        from zhipuai import ZhipuAI
+
 
         self.client = ZhipuAI(api_key=api_key)
         self.model = model
@@ -33,7 +33,7 @@ class ZhipuAIComponent(ChatAI):
         messages = [
             {
                 "role": "user",
-                "content": f"场景：{params.prompt}. 现在你需要打个招呼，20字左右.记住语言必须使用使用 {get_language_label_by_value(params.language)}，不可以使用其他语言 ",
+                "content": f"场景：{params.prompt}. 现在你需要打个招呼，20字左右.记住语言必须使用使用 {params.language}，不可以使用其他语言 ",
             }
         ]
 

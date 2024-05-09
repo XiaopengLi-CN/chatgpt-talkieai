@@ -1,0 +1,201 @@
+.common-header[data-v-1bc5cecc] {
+  top: 0;
+  position: relative;
+}
+.common-header .common-header-content[data-v-1bc5cecc] {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: inherit;
+}
+.common-header .common-header-content .left[data-v-1bc5cecc] {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.common-header .common-header-content .left .left-icon-box[data-v-1bc5cecc] {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.common-header .common-header-content .left .back-icon[data-v-1bc5cecc] {
+  width: 0.5625rem;
+  height: 1rem;
+}
+.common-header .common-header-content .content[data-v-1bc5cecc] {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  flex: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.common-header .common-header-content .right[data-v-1bc5cecc] {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+uni-view[data-v-3aa1718d] {
+  margin: 0;
+  padding: 0;
+}
+.common-button[data-v-3aa1718d] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+uni-button[data-v-3aa1718d]:active {
+  opacity: 0.8;
+}
+uni-view[data-v-3aa1718d] {
+  box-sizing: border-box;
+}
+.row-bc[data-v-3aa1718d] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-sc[data-v-3aa1718d] {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.common-button[data-v-3aa1718d] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atk-btn-box[data-v-3aa1718d] {
+  padding: 0.875rem 0;
+  background: #6236FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 1.875rem;
+  color: #fff;
+}
+.atk-btn-box .atk-btn[data-v-3aa1718d] {
+  letter-spacing: 0.125rem;
+}
+.atk-btn-box.gray[data-v-3aa1718d] {
+  background: #999;
+}
+.bottom-box[data-v-3aa1718d] {
+  margin: 1rem;
+  width: calc(100vw - 2rem);
+  position: fixed;
+  bottom: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.icon[data-v-3aa1718d] {
+  width: 1rem;
+  height: 1rem;
+}
+.feedback[data-v-3aa1718d] {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+.feedback .feedback-box[data-v-3aa1718d] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback .feedback-textarea-box[data-v-3aa1718d] {
+  padding: 0 1rem;
+  border-bottom: 0.03125rem solid #e8e8e8;
+  width: 23.4375rem;
+  position: relative;
+}
+.feedback .feedback-textarea-box .feedback-textarea[data-v-3aa1718d] {
+  z-index: 99;
+  width: 100%;
+  font-size: 0.875rem;
+  white-space: initial;
+  height: 11.25rem;
+}
+.feedback .feedback-textarea-box .placeholder-style[data-v-3aa1718d] {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #707070;
+  line-height: 1.25rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+  width: 21.4375rem;
+}
+.feedback .feedback-input-box[data-v-3aa1718d] {
+  padding: 0.875rem;
+  width: 100%;
+  font-size: 0.875rem;
+  border-bottom: 0.03125rem solid #e8e8e8;
+}
+.feedback .feedback-input-box .feedback-input[data-v-3aa1718d] {
+  width: 100%;
+  white-space: initial;
+}
+.feedback .feedback-btn-box[data-v-3aa1718d] {
+  padding: 0 1rem;
+  width: 100%;
+}
+.feedback .feedback-btn-box .feedback-btn[data-v-3aa1718d] {
+  width: 100%;
+  border-radius: 0.9375rem;
+  height: 3.375rem;
+  margin-top: 3.125rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  letter-spacing: 1px;
+}
+.feedback .feedback-success[data-v-3aa1718d] {
+  text-align: center;
+  color: #6236ff;
+  font-size: 1.0625rem;
+  margin-top: 0.9375rem;
+}
+.feedback .feedback-box[data-v-3aa1718d] {
+  padding-top: 0.375rem;
+}
+.feedback .feedback-box .feedback-ico[data-v-3aa1718d] {
+  margin-top: 3.125rem;
+  width: 10.8125rem;
+  height: 7.3125rem;
+}
+.feedback .return-btn[data-v-3aa1718d] {
+  margin-top: 3.75rem;
+}

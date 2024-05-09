@@ -1,0 +1,1361 @@
+.common-header[data-v-1bc5cecc] {
+  top: 0;
+  position: relative;
+}
+.common-header .common-header-content[data-v-1bc5cecc] {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: inherit;
+}
+.common-header .common-header-content .left[data-v-1bc5cecc] {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.common-header .common-header-content .left .left-icon-box[data-v-1bc5cecc] {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.common-header .common-header-content .left .back-icon[data-v-1bc5cecc] {
+  width: 0.5625rem;
+  height: 1rem;
+}
+.common-header .common-header-content .content[data-v-1bc5cecc] {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  flex: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.common-header .common-header-content .right[data-v-1bc5cecc] {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.loading-round[data-v-591bce23] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-round .loading-round-img[data-v-591bce23] {
+  width: 16px;
+  height: 16px;
+  animation: running-591bce23 0.6s infinite;
+}
+@keyframes running-591bce23 {
+0% {
+    transform: rotate(40deg);
+}
+33% {
+    transform: rotate(150deg);
+}
+67% {
+    transform: rotate(230deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.speech-container[data-v-9e3d83e8] {
+  display: flex;
+  align-items: center;
+}
+.speech-container .playing-ico[data-v-9e3d83e8] {
+  display: flex;
+  align-items: center;
+}
+.speech-container .playing-ico .icon[data-v-9e3d83e8] {
+  width: 1rem;
+  height: 1rem;
+}
+.speech-container .playing-ico .icon.reverse[data-v-9e3d83e8] {
+  transform: rotateY(180deg);
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.uni-popup[data-v-526cda1c] {
+  position: fixed;
+  z-index: 99;
+}
+.uni-popup.top[data-v-526cda1c], .uni-popup.left[data-v-526cda1c], .uni-popup.right[data-v-526cda1c] {
+  top: 0;
+}
+.uni-popup .uni-popup__wrapper[data-v-526cda1c] {
+  display: block;
+  position: relative;
+  /* iphonex 等安全区设置，底部安全区适配 */
+}
+.uni-popup .uni-popup__wrapper.left[data-v-526cda1c], .uni-popup .uni-popup__wrapper.right[data-v-526cda1c] {
+  padding-top: 0;
+  flex: 1;
+}
+.fixforpc-z-index[data-v-526cda1c] {
+  z-index: 999;
+}
+.fixforpc-top[data-v-526cda1c] {
+  top: 0;
+}
+.collect-icon-box[data-v-2251c80e] {
+  width: 1rem;
+  height: 0.9375rem;
+}
+.collect-icon-box .collect-icon[data-v-2251c80e] {
+  width: 1rem;
+  height: 0.9375rem;
+}
+
+uni-view[data-v-d41638ae] {
+  margin: 0;
+  padding: 0;
+}
+.common-button[data-v-d41638ae] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+uni-button[data-v-d41638ae]:active {
+  opacity: 0.8;
+}
+uni-view[data-v-d41638ae] {
+  box-sizing: border-box;
+}
+.row-bc[data-v-d41638ae] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-sc[data-v-d41638ae] {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.common-button[data-v-d41638ae] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atk-btn-box[data-v-d41638ae] {
+  padding: 0.875rem 0;
+  background: #6236FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 1.875rem;
+  color: #fff;
+}
+.atk-btn-box .atk-btn[data-v-d41638ae] {
+  letter-spacing: 0.125rem;
+}
+.atk-btn-box.gray[data-v-d41638ae] {
+  background: #999;
+}
+.bottom-box[data-v-d41638ae] {
+  margin: 1rem;
+  width: calc(100vw - 2rem);
+  position: fixed;
+  bottom: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.icon[data-v-d41638ae] {
+  width: 1rem;
+  height: 1rem;
+}
+.word-analysis-container[data-v-d41638ae] {
+  background-color: #FFF;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  position: relative;
+}
+.word-analysis-container .close-icon[data-v-d41638ae] {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.word-analysis-container .content[data-v-d41638ae] {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  background-color: #FFF;
+}
+.word-analysis-container .content .word-box[data-v-d41638ae] {
+  margin-top: 0.5rem;
+}
+.word-analysis-container .content .word-box .word-text[data-v-d41638ae] {
+  font-size: 1.5rem;
+  word-break: break-all;
+  color: #333;
+  font-weight: 700;
+}
+.word-analysis-container .content .pronunciation-box[data-v-d41638ae] {
+  margin-top: 0.5rem;
+}
+.word-analysis-container .content .pronunciation-box .pronunciation-text[data-v-d41638ae] {
+  font-weight: 700;
+  color: #999;
+}
+.word-analysis-container .content .pronunciation-box .pronunciation-play-icon[data-v-d41638ae] {
+  margin-left: 0.5rem;
+}
+.word-analysis-container .content .translation-box[data-v-d41638ae] {
+  margin-top: 0.5rem;
+}
+
+.functional-text-container[data-v-5ba4dd5b] {
+  width: 100%;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.functional-text-container .text-box[data-v-5ba4dd5b] {
+  display: flex;
+  justify-content: space-between;
+}
+.functional-text-container .text-box .text-shadow[data-v-5ba4dd5b] {
+  filter: blur(5px);
+}
+.functional-text-container .text-box .text-content[data-v-5ba4dd5b] {
+  flex: 1;
+}
+.functional-text-container .text-box .clickable-word[data-v-5ba4dd5b] {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 4px;
+  word-break: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  text-align: center;
+}
+.functional-text-container .text-box .clickable-word .word-text[data-v-5ba4dd5b] {
+  background-color: #d5d9e0;
+}
+.functional-text-container .text-box .clickable-word:hover .word-text[data-v-5ba4dd5b] {
+  background-color: #c0d3db;
+}
+.functional-text-container .text-box .audio-player-container[data-v-5ba4dd5b] {
+  margin-left: 0.25rem;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+.functional-text-container .translate-box[data-v-5ba4dd5b] {
+  margin-top: 1rem;
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.grammar-box[data-v-c321d887] {
+  padding-top: 0.375rem;
+  padding-bottom: 10.9375rem;
+  min-height: 9.375rem;
+}
+.grammar-box .grammar-content .handclap-box[data-v-c321d887] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grammar-box .grammar-content .handclap-box .handclap-text[data-v-c321d887] {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #49CEB0;
+  line-height: 1.25rem;
+}
+.grammar-box .action-box[data-v-c321d887] {
+  display: flex;
+  margin-top: 0.9375rem;
+}
+.grammar-box .action-box .icon-box[data-v-c321d887] {
+  margin-left: 0.75rem;
+}
+.grammar-box .action-box .icon-box[data-v-c321d887]:first-child {
+  margin-left: 0;
+}
+.grammar-box .action-box .icon[data-v-c321d887] {
+  width: 1rem;
+  height: 1rem;
+}
+.grammar-box .tips-box[data-v-c321d887] {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.grammar-box .tips-box .grammar-icon-tips[data-v-c321d887] {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.75rem;
+}
+.grammar-box .tips-box .grammar-result-content[data-v-c321d887] {
+  padding: 0.75rem;
+  border-radius: 0.125rem;
+  flex: 1;
+}
+.grammar-box .tips-box .grammar-result-content.red[data-v-c321d887] {
+  background-color: rgb(255, 243, 243);
+}
+.grammar-box .tips-box .grammar-result-content.green[data-v-c321d887] {
+  background-color: rgb(230, 244, 240);
+}
+.sub-title[data-v-c321d887] {
+  height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 1.25rem 0;
+}
+.reason[data-v-c321d887] {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.better-content-box[data-v-c321d887] {
+  display: flex;
+  gap: 0.75rem;
+}
+.better-content-box .better-content-icon[data-v-c321d887] {
+  width: 1rem;
+  height: 1rem;
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.speech-container[data-v-0e9e744f] {
+  min-height: 3.90625rem;
+  height: 7.375rem;
+}
+.recorder-btn-box[data-v-0e9e744f],
+.play-btn-box[data-v-0e9e744f] {
+  margin: 0 3.125rem;
+}
+.recorder-completed-box[data-v-0e9e744f],
+.recorder-box[data-v-0e9e744f] {
+  padding: 0.75rem 2.8125rem 0 2.8125rem;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.recorder-completed-box .recorder-btn-box[data-v-0e9e744f] {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: rgb(236, 230, 254);
+  border-radius: 87px;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}
+.recorder-completed-box .trash-btn-box[data-v-0e9e744f] {
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+.recorder-completed-box .trash-btn-box .trash-btn[data-v-0e9e744f] {
+  width: 1rem;
+  height: 1rem;
+}
+.recorder-completed-box .play-btn-box[data-v-0e9e744f] {
+  min-width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(98, 54, 255);
+}
+.recorder-completed-box .play-btn-box .play-btn[data-v-0e9e744f] {
+  width: 1rem;
+  height: 1.5rem;
+}
+.recorder-completed-box .send-btn-box[data-v-0e9e744f] {
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(98, 54, 255);
+}
+.recorder-completed-box .send-btn-box.translating[data-v-0e9e744f] {
+  background-color: rgb(211, 211, 211);
+}
+.recorder-completed-box .send-btn-box .send-btn[data-v-0e9e744f] {
+  width: 1rem;
+  height: 1rem;
+}
+.recorder-completed-box[data-v-0e9e744f] {
+  padding: 1.25rem 0.625rem 0 0.625rem;
+}
+.recorder-box .keybord-icon[data-v-0e9e744f],
+.recorder-box .input-type-switch-btn[data-v-0e9e744f] {
+  width: 3rem;
+  height: 3rem;
+}
+.recorder-box .keybord-icon.up[data-v-0e9e744f],
+.recorder-box .input-type-switch-btn.up[data-v-0e9e744f] {
+  transform: rotate(180deg);
+}
+.recorder-box .recorder-btn-box[data-v-0e9e744f] {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: rgb(236, 230, 254);
+  border-radius: 87px;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}
+.recorder-box .recorder-btn-box .voice-circle[data-v-0e9e744f] {
+  width: 4.25rem;
+  height: 4.25rem;
+  background-color: rgb(98, 54, 255);
+  border-radius: 70px;
+  padding: 1.375rem 1.5625rem 1.375rem 1.5625rem;
+  box-sizing: border-box;
+}
+.recorder-box .recorder-btn-box .voice-circle .voice-icon[data-v-0e9e744f] {
+  width: 1.125rem;
+  height: 1.5rem;
+}
+.recordering-box[data-v-0e9e744f] {
+  display: flex;
+  position: relative;
+  padding: 0.75rem 2.8125rem 0 2.8125rem;
+  justify-content: center;
+  align-items: center;
+}
+.recordering-box .outter-circle.animated[data-v-0e9e744f] {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: rgba(251, 107, 107, 0.28);
+  position: relative;
+  border-radius: 50%;
+  animation: scale-40df7b08-0e9e744f 2s infinite;
+}
+@keyframes scale-40df7b08-0e9e744f {
+0% {
+    transform: scale(1);
+    opacity: 1;
+}
+50% {
+    transform: scale(0.8);
+    opacity: 0.9;
+}
+to {
+    transform: scale(1);
+    opacity: 1;
+}
+}
+.recordering-box .recordering-circle[data-v-0e9e744f] {
+  position: absolute;
+  background-color: rgb(251, 107, 107);
+  border-radius: 70px;
+  padding: 1.375rem 1.375rem 1.375rem 1.375rem;
+  box-sizing: border-box;
+}
+.recordering-box .recordering-circle .recordering-square[data-v-0e9e744f] {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+.rate-container[data-v-8576ae7b] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rate-box[data-v-8576ae7b] {
+  width: 9.375rem;
+  height: 9.375rem;
+  background: #333;
+  padding: 0.625rem;
+  border-radius: 6.25rem;
+  box-sizing: border-box;
+}
+.rate-small-box[data-v-8576ae7b] {
+  width: 8.125rem;
+  height: 8.125rem;
+  background: #eee;
+  border-radius: 4.0625rem;
+  box-sizing: border-box;
+}
+
+.word-box[data-v-f08da118] {
+  display: flex;
+  font-size: 0.875rem;
+  flex-wrap: wrap;
+}
+.word-box .word-text[data-v-f08da118] {
+  margin-left: 0.375rem;
+}
+.word-box .word-text[data-v-f08da118]:first-child {
+  margin-left: 0;
+}
+.word-box .word-text.incorrect[data-v-f08da118] {
+  color: #fc6262;
+}
+.word-box .word-text.good[data-v-f08da118] {
+  color: #87622b;
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.pronunciation-content .pronunciation-tips[data-v-622aa746] {
+  background-color: #FBF7EB;
+  color: #917046;
+  border-radius: 0.9375rem;
+  margin-top: -0.625rem;
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+.pronunciation-content .voice-box[data-v-622aa746] {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.pronunciation-content .voice-box .ai-voice-box[data-v-622aa746],
+.pronunciation-content .voice-box .original-voice-box[data-v-622aa746] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 0px rgb(196, 196, 196);
+  background-color: rgb(255, 255, 255);
+  border-radius: 42px;
+  width: 4.5625rem;
+  padding: 0.1875rem 0.75rem 0.1875rem 0.125rem;
+  justify-content: space-between;
+}
+.pronunciation-content .voice-box .voice-avatar[data-v-622aa746] {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 2.25rem;
+}
+.pronunciation-content .voice-box .my-voice-avatar-box[data-v-622aa746] {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: #6236ff;
+  border-radius: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pronunciation-content .voice-box .my-voice-avatar-box .avatar-text[data-v-622aa746] {
+  width: 1.1875rem;
+  height: 1.5625rem;
+  font-size: 1.125rem;
+  color: #fff;
+}
+.practice-box[data-v-622aa746] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.5rem;
+}
+.phoneme-box[data-v-7495a7f6] {
+  display: flex;
+  font-size: 0.875rem;
+  flex-wrap: wrap;
+}
+.phoneme-box .phoneme-text[data-v-7495a7f6] {
+  margin-left: 0.375rem;
+}
+.phoneme-box .phoneme-text[data-v-7495a7f6]:first-child {
+  margin-left: 0;
+}
+.phoneme-box .phoneme-text.incorrect[data-v-7495a7f6] {
+  color: #fc6262;
+}
+.phoneme-box .phoneme-text.good[data-v-7495a7f6] {
+  color: #87622b;
+}
+
+.word-detail-container .scrore-box[data-v-d52515e0] {
+  text-align: center;
+}
+.word-detail-container .original-word-box[data-v-d52515e0] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.word-detail-container .original-word-box .left-box[data-v-d52515e0] {
+  display: flex;
+  align-items: center;
+}
+.word-detail-container .original-word-box .left-box .original-word-text[data-v-d52515e0] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.09375rem;
+  letter-spacing: 1px;
+}
+.word-detail-container .original-word-box .left-box .audio-player-box[data-v-d52515e0] {
+  margin-left: 1rem;
+}
+.word-detail-container .phonetic-box[data-v-d52515e0] {
+  margin-top: 0.5625rem;
+}
+.word-detail-container .phonetic-box .phonetic-text[data-v-d52515e0] {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #707070;
+  line-height: 1.25rem;
+}
+.word-detail-container .translation-box[data-v-d52515e0] {
+  margin-top: 0.5625rem;
+}
+.word-detail-container .speech-tip-box[data-v-d52515e0] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.5rem;
+}
+.word-detail-container .phoneme-box[data-v-d52515e0] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+}
+.word-detail-container .phoneme-box .audio-player-box[data-v-d52515e0] {
+  margin-left: 0.375rem;
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.message-grammat-container[data-v-ce932745] {
+  background-color: #FFF;
+  padding: 1rem;
+  position: relative;
+}
+.message-grammat-container .close-icon-box[data-v-ce932745] {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  line-height: 0.625rem;
+}
+.message-grammat-container .close-icon-box .close-icon[data-v-ce932745] {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.message-grammat-container .tab-box[data-v-ce932745] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.message-grammat-container .tab-box .tab-item[data-v-ce932745] {
+  margin-left: 1.3125rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 1.5625rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+.message-grammat-container .tab-box .tab-item[data-v-ce932745]:first-child {
+  margin-left: 0;
+}
+.message-grammat-container .tab-box .tab-item.active[data-v-ce932745] {
+  height: 1.84375rem;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.84375rem;
+}
+.message-grammat-container .tab-box .tab-item.active[data-v-ce932745]::after {
+  position: absolute;
+  content: "";
+  background: #6236ff;
+  width: 1.25rem;
+  height: 0.3125rem;
+  border-radius: 0.15625rem;
+  bottom: -0.625rem;
+}
+.message-grammat-container .grammar-box[data-v-ce932745] {
+  padding-top: 0.375rem;
+}
+.word-back-icon-box[data-v-ce932745] {
+  width: 0.5625rem;
+  height: 1rem;
+}
+.word-back-icon-box .icon[data-v-ce932745] {
+  width: 0.5625rem;
+  height: 1rem;
+}
+.loading-box[data-v-7fb57159] {
+  position: relative;
+  padding: 12px 24px;
+  width: 80px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.loading-box .loading-box-content[data-v-7fb57159] {
+  display: flex;
+  width: 32px;
+  flex: 1;
+}
+.loading-box .loading-box-item[data-v-7fb57159] {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 6px;
+  margin-right: 4px;
+  animation: bounce-7fb57159 1s infinite;
+}
+.loading-box .loading-box-item1[data-v-7fb57159] {
+  animation-delay: 0.2s;
+}
+.loading-box .loading-box-item2[data-v-7fb57159] {
+  animation-delay: 0.4s;
+  margin-right: 0;
+}
+@keyframes bounce-7fb57159 {
+0% {
+    display: none;
+    opacity: 0.2;
+}
+50% {
+    display: block;
+    opacity: 1;
+}
+100% {
+    display: none;
+    opacity: 0.2;
+}
+}
+
+.speech-box[data-v-30e39fae] {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+.message-container[data-v-30e39fae] {
+  display: flex;
+  flex-direction: column;
+}
+.message-container .message-box[data-v-30e39fae] {
+  max-width: 80%;
+}
+.message-container .message-box .message-text-box[data-v-30e39fae] {
+  padding: 0.875rem 1.125rem;
+  border-radius: 0.25rem 0.9375rem 0.9375rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.message-container .message-box .message-text-box.own-text-box[data-v-30e39fae] {
+  border-radius: 0.9375rem 0.25rem 0.9375rem 0.9375rem;
+}
+.message-container .message-box .message-text-box .text-shadow[data-v-30e39fae] {
+  filter: blur(5px);
+}
+.message-container .divider[data-v-30e39fae] {
+  margin: 14px 0 8px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
+.message-container.right-content[data-v-30e39fae] {
+  align-items: flex-end;
+}
+.message-container.right-content .message-text-box[data-v-30e39fae] {
+  background-color: #ede8ff;
+}
+.message-container.right-content .account-text-container .account-text-box[data-v-30e39fae] {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+.message-container.right-content .grammar-outter-box[data-v-30e39fae] {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.message-container.right-content .grammar-outter-box .grammar-box[data-v-30e39fae] {
+  margin-top: 0.375rem;
+  display: flex;
+  border: #979797 0.03125rem solid;
+  padding: 0.375rem 0.875rem;
+  align-items: center;
+  border-radius: 0.3125rem;
+}
+.message-container.right-content .grammar-outter-box .grammar-box .grammar-icon[data-v-30e39fae] {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.4375rem;
+}
+.message-container.right-content .grammar-outter-box .grammar-box .grammar-score[data-v-30e39fae] {
+  color: #11a581;
+}
+.message-container.left-content[data-v-30e39fae] {
+  align-items: flex-start;
+}
+.message-container.left-content .message-text-box[data-v-30e39fae] {
+  background-color: #f1f1f3;
+}
+.message-container.left-content .action-container[data-v-30e39fae] {
+  display: flex;
+}
+.message-container.left-content .action-container .btn-box[data-v-30e39fae] {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-container.left-content .action-container .btn-box.active[data-v-30e39fae] {
+  background-color: #fff;
+}
+.message-container.left-content .action-container .btn-box[data-v-30e39fae]:first-child {
+  margin-left: 0;
+}
+.message-container.left-content .action-icon[data-v-30e39fae] {
+  width: 1rem;
+  height: 1rem;
+}
+
+.divide[data-v-4779b32d] {
+  width: 23.4375rem;
+  height: 0.03125rem;
+  background-color: #E8E8E8;
+  margin-top: 0.84375rem;
+}
+.speech-divide-box[data-v-4779b32d] {
+  background-color: #FFF;
+  padding-top: 4.875rem;
+}
+.speech-divide-box .speech-divide[data-v-4779b32d] {
+  width: 100%;
+  height: 0.03125rem;
+  box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.5);
+  border: 0.03125rem solid #E5E5E5;
+  filter: blur(4px);
+}
+.padding-left-right[data-v-4779b32d] {
+  padding: 0 1rem;
+}
+.padding-bottom[data-v-4779b32d] {
+  padding-bottom: 1rem;
+}
+.speech-box[data-v-4779b32d] {
+  background-color: #fff;
+  margin-top: 1rem;
+}
+.promot-popup-container[data-v-4779b32d] {
+  background-color: #fff;
+  position: relative;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.promot-popup-container .close-icon-box[data-v-4779b32d] {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  line-height: 0.625rem;
+}
+.promot-popup-container .close-icon-box .close-icon[data-v-4779b32d] {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.promot-popup-container .title-box[data-v-4779b32d] {
+  padding: 1rem 1rem 0 1rem;
+  position: relative;
+}
+.promot-popup-container .title-box[data-v-4779b32d]::after {
+  position: absolute;
+  content: "";
+  background: #6236ff;
+  width: 1.5625rem;
+  height: 0.3125rem;
+  border-radius: 0.15625rem;
+  bottom: -0.375rem;
+  left: 1.5625rem;
+}
+.promot-popup-container .title-box .title[data-v-4779b32d] {
+  font-size: 1.3125rem;
+  font-weight: 500;
+}
+.promot-popup-container .sub-title-box[data-v-4779b32d] {
+  margin-top: 1.5625rem;
+  padding: 0 1rem 0 1rem;
+}
+.promot-popup-container .sub-title[data-v-4779b32d] {
+  font-size: 0.875rem;
+}
+.promot-popup-container .prompt-text-box[data-v-4779b32d] {
+  margin-top: 0.875rem;
+  display: flex;
+}
+.promot-popup-container .action-box[data-v-4779b32d] {
+  margin-top: 1rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.promot-popup-container .action-box .right-box[data-v-4779b32d] {
+  color: #6236ff;
+}
+.promot-popup-container .translate-icon-box[data-v-4779b32d] {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.125rem;
+}
+.promot-popup-container .translate-icon-box .icon-tanslate[data-v-4779b32d] {
+  width: 1rem;
+  height: 1rem;
+}
+.promot-popup-container .translate-icon-box.active[data-v-4779b32d] {
+  background: #e8ebff;
+  color: #6236ff;
+}
+.promot-popup-container .icon-tanslate[data-v-4779b32d] {
+  width: 1rem;
+  height: 1rem;
+}
+.loading-box[data-v-4779b32d] {
+  min-height: 3.125rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+uni-view[data-v-b772b10a] {
+  margin: 0;
+  padding: 0;
+}
+.common-button[data-v-b772b10a] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+uni-button[data-v-b772b10a]:active {
+  opacity: 0.8;
+}
+uni-view[data-v-b772b10a] {
+  box-sizing: border-box;
+}
+.row-bc[data-v-b772b10a] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-sc[data-v-b772b10a] {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.common-button[data-v-b772b10a] {
+  width: 18.4375rem;
+  height: 3.75rem;
+  background: #6236FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atk-btn-box[data-v-b772b10a] {
+  padding: 0.875rem 0;
+  background: #6236FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 1.875rem;
+  color: #fff;
+}
+.atk-btn-box .atk-btn[data-v-b772b10a] {
+  letter-spacing: 0.125rem;
+}
+.atk-btn-box.gray[data-v-b772b10a] {
+  background: #999;
+}
+.bottom-box[data-v-b772b10a] {
+  margin: 1rem;
+  width: calc(100vw - 2rem);
+  position: fixed;
+  bottom: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.icon[data-v-b772b10a] {
+  width: 1rem;
+  height: 1rem;
+}
+.translation-container[data-v-b772b10a] {
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.9375rem 0.9375rem 0px 0px;
+  position: relative;
+}
+.translation-container .close-icon-box[data-v-b772b10a] {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  line-height: 0.625rem;
+}
+.translation-container .close-icon-box .close-icon[data-v-b772b10a] {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.translation-container .content[data-v-b772b10a] {
+  margin-top: 0.5rem;
+  background-color: #fff;
+}
+.translation-container .content .title-box .title-text[data-v-b772b10a] {
+  width: 5.4375rem;
+  height: 1.84375rem;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.84375rem;
+  letter-spacing: 1px;
+}
+.translation-container .content .textarea-box[data-v-b772b10a] {
+  margin-top: 1.5625rem;
+  position: relative;
+}
+.translation-container .content .textarea-box .textarea[data-v-b772b10a] {
+  width: calc(100% - 2rem);
+  height: 10.9375rem;
+  border: 0.03125rem solid #979797;
+  padding: 0.875rem;
+}
+.translation-container .content .textarea-box .translate-btn-box[data-v-b772b10a] {
+  z-index: 100;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  width: 3.5625rem;
+  height: 2rem;
+  border-radius: 0.3125rem;
+  border: 0.03125rem solid #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #979797;
+}
+.translation-container .content .textarea-box .translate-btn-box.active[data-v-b772b10a] {
+  border: 0.03125rem solid #6236ff;
+  color: #6236ff;
+}
+.translation-container .content .textarea-box .translate-btn-box .translate-btn[data-v-b772b10a] {
+  width: 1.8125rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.translation-container .content .translation-box[data-v-b772b10a] {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.translation-container .content .translation-box .translation-text[data-v-b772b10a] {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+}
+.translation-container .content .translation-box .playing-box[data-v-b772b10a] {
+  margin-left: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+.send-box[data-v-b772b10a] {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.125rem;
+}
+.send-box .send-btn-box .send-btn[data-v-b772b10a] {
+  color: #6236ff;
+}
+.loading-box[data-v-b772b10a] {
+  min-height: 3.125rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speech-container[data-v-b772b10a] {
+  background-color: #fff;
+  margin-top: 1rem;
+}
+
+.menu-container[data-v-191d459c] {
+  display: flex;
+  padding: 0.375rem 1rem;
+  background-color: #FFF;
+}
+.menu-container .menu-item[data-v-191d459c] {
+  background-color: #f2f2f2;
+  border-radius: 0.4375rem;
+  display: flex;
+  align-items: center;
+  padding: 0.28125rem 0.5625rem;
+  margin-left: 1.125rem;
+}
+.menu-container .menu-item[data-v-191d459c]:first-child {
+  margin-left: 0;
+}
+.menu-container .menu-item .menu-icon[data-v-191d459c] {
+  width: 1rem;
+  height: 1rem;
+}
+.menu-container .menu-item .menu-text[data-v-191d459c] {
+  margin-left: 0.4375rem;
+}
+
+.chat-box[data-v-da04a0a0] {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.chat-container[data-v-da04a0a0] {
+  width: 90%;
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 12.5rem;
+}
+.chat-container .message-content-item[data-v-da04a0a0] {
+  margin-top: 1.25rem;
+}
+.chat-bottom-container[data-v-da04a0a0] {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  bottom: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.chat-bottom-container .input-bottom-container[data-v-da04a0a0] {
+  width: 100%;
+  height: 4.84375rem;
+  box-sizing: border-box;
+  padding: 1.5625rem 0.75rem;
+  display: flex;
+  gap: 0.875rem;
+  align-items: center;
+  box-shadow: 0 -0.0625rem 0.125rem 0 #C4C4C4;
+}
+.chat-bottom-container .input-bottom-container .voice-icon-box .voice-icon[data-v-da04a0a0] {
+  width: 1.125rem;
+  height: 1.5rem;
+}
+.chat-bottom-container .input-bottom-container .send-icon-box[data-v-da04a0a0] {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #d3d3d3;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-bottom-container .input-bottom-container .send-icon-box.active[data-v-da04a0a0] {
+  background-color: #6236ff;
+}
+.chat-bottom-container .input-bottom-container .send-icon-box .send-icon[data-v-da04a0a0] {
+  width: 1rem;
+  height: 1rem;
+}
+.chat-bottom-container .input-bottom-container .input-box[data-v-da04a0a0] {
+  flex: 1;
+  height: 2.5rem;
+}
+.chat-bottom-container .input-bottom-container .input-box .textarea[data-v-da04a0a0] {
+  background-color: #f1f1f3;
+  box-sizing: border-box;
+  border-radius: 40px;
+  height: 100%;
+}
+.chat-bottom-container .speech-box[data-v-da04a0a0] {
+  padding-top: 1rem;
+}
+.chat-bottom-container .recorder-box .keybord-icon[data-v-da04a0a0],
+.chat-bottom-container .recorder-box .input-type-switch-btn[data-v-da04a0a0] {
+  width: 3rem;
+  height: 3rem;
+}
+.chat-bottom-container .recorder-box .keybord-icon.up[data-v-da04a0a0],
+.chat-bottom-container .recorder-box .input-type-switch-btn.up[data-v-da04a0a0] {
+  transform: rotate(180deg);
+}

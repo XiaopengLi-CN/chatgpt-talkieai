@@ -1,0 +1,56 @@
+.container[data-v-45258083] {
+  padding: 11.875rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo[data-v-45258083] {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.container .title[data-v-45258083] {
+  margin-top: 1.875rem;
+  width: 13.4375rem;
+  height: 2.09375rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 2.09375rem;
+  letter-spacing: 1px;
+}
+.container .sub-title[data-v-45258083] {
+  margin-top: 0.625rem;
+  margin-bottom: 5rem;
+  width: 12.1875rem;
+  height: 1.40625rem;
+  font-size: 1rem;
+  color: #939193;
+  line-height: 1.40625rem;
+  letter-spacing: 1px;
+}
+.container .mp-weixin-login-btn-box[data-v-45258083] {
+  width: 100%;
+  height: 2.8125rem;
+  border-radius: 1.875rem;
+  background-color: #5456EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .mp-weixin-login-btn-box .mp-weixin-login-btn[data-v-45258083] {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 1.40625rem;
+  line-height: 1.40625rem;
+}
+.container .visitor-login[data-v-45258083] {
+  margin-top: 1.25rem;
+  height: 1.40625rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6236FF;
+  line-height: 1.40625rem;
+  letter-spacing: 1px;
+}

@@ -12,7 +12,7 @@ if Config.AI_SERVER == 'CHAT_GPT':
     # api_key是用来访问ChatGPT AI服务的密钥
     # base_url是ChatGPT AI服务的基础URL
     # model是我们将要使用的ChatGPT AI模型的名称
-    chat_ai = ChatGPTAI(api_key=Config.CHAT_GPT_KEY, base_url=Config.CHAT_GPT_PROXY, model=Config.CHAT_GPT_MODEL)
+        chat_ai = ChatGPTAI(api_key=Config.CHAT_GPT_KEY, base_url=Config.CHAT_GPT_PROXY, model=Config.CHAT_GPT_MODEL)
 elif Config.AI_SERVER == 'ZHIPU':
     # 如果Config.AI_SERVER的值为'ZHIPU'，则我们将使用智谱AI服务
     # 创建ZhipuAIComponent类的实例，需要传入api_key和model两个参数

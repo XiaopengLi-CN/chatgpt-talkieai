@@ -1,11 +1,11 @@
 # 导入app.ai.models模块，这个模块包含了我们项目中定义的所有AI模型
 from app.ai.models import *
 # 导入abc模块，这个模块提供了抽象基类的功能，我们可以通过它定义抽象方法和抽象类
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod#https://blog.csdn.net/qq_43391414/article/details/127918891
 # 导入typing模块，这个模块提供了类型提示的功能，我们可以通过它定义函数的参数类型和返回类型
-from typing import List, Dict
+from typing import List, Dict#https://blog.csdn.net/weixin_46713695/article/details/125032851
 # 导入dataclasses模块，这个模块提供了数据类的功能，我们可以通过它快速定义类，并自动实现一些常用方法，如__init__、__repr__等
-from dataclasses import dataclass
+from dataclasses import dataclass #https://zhuanlan.zhihu.com/p/59657729
 
 
 # 使用dataclass装饰器定义MessageInvokeDTO类，这是一个数据类，包含了messages、temperature和max_tokens三个属性
@@ -26,9 +26,9 @@ class FunctionInvokeDTO:
     function: Dict
     # messages属性是一个列表，每个元素是一个字典
     messages: List[Dict]
-    # temperature属性是一个浮点数，表示生成文本的随机性，值越大，生成的文本越随机
+    # temperature属性是一个浮点数，表示生成文本的随机性，值越大，生成的文本越随机，这是用于微调GPT的1个参数
     temperature: float = 0.5
-    # max_tokens属性是一个整数，表示生成文本的最大长度
+    # max_tokens属性是一个整数，表示生成文本的最大长度，这是用于微调GPT的1个参数
     max_tokens: int = 300
 
 

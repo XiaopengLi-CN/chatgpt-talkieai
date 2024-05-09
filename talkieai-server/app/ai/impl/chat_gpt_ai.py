@@ -1,3 +1,4 @@
+
 # 导入typing模块，这个模块提供了类型提示的功能，我们可以通过它定义函数的参数类型和返回类型
 from typing import List, Dict
 # 导入json模块，这个模块提供了JSON编码和解码的功能，我们可以通过它将Python对象转换为JSON格式的字符串，或者将JSON格式的字符串转换为Python对象
@@ -10,7 +11,8 @@ from app.ai.interfaces import *
 from app.ai.models import *
 # 导入app.core.logging模块，这个模块提供了日志记录的功能，我们可以通过它记录程序运行过程中的信息，方便后期调试和分析
 from app.core.logging import logging
-
+# 导入openai模块，这个模块提供了与OpenAI进行交互的功能
+from openai import OpenAI
 
 # 定义ChatGPTAI类，这个类继承自ChatAI接口，实现了ChatAI接口中定义的所有抽象方法
 class ChatGPTAI(ChatAI):
@@ -18,8 +20,6 @@ class ChatGPTAI(ChatAI):
 
     # 定义构造方法，接受api_key、base_url和model三个参数
     def __init__(self, api_key: str, base_url: str = None, model: str = None):
-        # 导入openai模块，这个模块提供了与OpenAI进行交互的功能
-        from openai import OpenAI
 
         # 将传入的api_key赋值给实例变量self.api_key
         self.api_key = api_key
